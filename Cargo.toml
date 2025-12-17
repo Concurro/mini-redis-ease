@@ -1,0 +1,17 @@
+[package]
+name = "mini-redis-ease"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.48.0", features = ["full"] }
+mini-redis = "0.4"
+bytes = "1"
+futures = "0.3.31"
+crossbeam = "0.8.4"
+tokio-stream = "0.1.17"
+
+[[example]]
+name = "hello-redis"
+path = "examples/helloredis.rs"
+
